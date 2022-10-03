@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Storage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/101326ea39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <div>
+        <h1 id="title" >TODO APP</h1> <i class="fa-solid fa-pen.to.square" id="editUser"></i>
+    </div>
+    <div>
+        <div id="bitcoinData"></div>
+        <i class="fa-solid fa-arrows-rotate" id="updateBitCoinData"></i>
+    </div>
+</header>
+<main>
+    <section class="tasks">
+        <div class="user-input">
+<label for="txtTasKName" class="d-none">
+    Ingresa el nombre de la tarea
+</label>
+<input type="text" id="txtTaskName" class="text-input" placeholder="Ingresa el nombre de la tarea">
+<button id="btnAddTask" class="btn" >
+    <i class="fa-solid fa-plus"></i>
+</button>
+<button id="btnChangeWallpaper" class="btn"> <i class="fa-solid fa-panorama"></i></button>
+        </div>
+        <div class="tasks-list">
+            <ul class="taskList">
+                <li id="listItemTemplete">
+                    <div class="btn-list-item from-center {completed}" id="{id}">
+                        <button class="fa-solid fa-check"><i class="fa-solid fa-check"></i></button>
+                        {template}
+                        <button class="delete"> <i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<script src="//cdn.jsdelivr.net.npm/sweetalert2@11"></script>
+</body>
+</html>
